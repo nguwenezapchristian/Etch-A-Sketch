@@ -7,15 +7,24 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 400px;
-    height: 400px;
     border: 1px solid black;
 }
-#div-row {
+.div-row {
     display: flex;
 }
-#div-column {
-    width: 25px;
-    height: 25px;
+.div-column {
+    width: 20px;
+    height: 20px;
     transition: background-color 0.2s;
+}
+#btn {
+    background-color: blue;
+    padding: 5px 5px;
+    margin: 5px;
+    color: white;
+    font-size: 15px;
+}
+#user-input {
+    padding: 5px 5px;
+    font-size: 15px;
 }
