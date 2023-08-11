@@ -1,17 +1,14 @@
-const div = document.querySelector("#container");
+const grids = document.querySelector("#container");
 function createGrids() {
 for (let i = 0; i < 16; i++) {
-    const grids = document.createElement('div');
-    grids.id = 'div-row';
-    grids.style.cssText = 'color: blue; background-color: red';
-    div.appendChild(grids);
+    const row = document.createElement('div');
+    row.id = 'div-row';
+    grids.appendChild(row);
     for (let a = 0; a < 16; a++)
     {
         const column = document.createElement('div');
         column.id = 'div-column';
-        column.textContent = 'B';
-        column.style.cssText = 'color: pink; background-color: yellow';
-        grids.appendChild(column);
+        row.appendChild(column);
     }
 }
 }
