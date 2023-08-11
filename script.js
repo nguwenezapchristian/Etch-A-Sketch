@@ -9,6 +9,9 @@ for (let i = 0; i < 16; i++) {
         const column = document.createElement('div');
         column.id = 'div-column';
         row.appendChild(column);
+        column.addEventListener('mouseover', () => {
+            columm.style.background = 'black';
+        })
     }
 }
 }
